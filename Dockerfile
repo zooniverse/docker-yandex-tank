@@ -10,6 +10,8 @@ RUN apt-get update && \
         build-essential \
         libxml2-dev \
         libxslt1-dev \
+        libffi-dev \
+        libssl-dev \
         python-dev \
         zlib1g-dev && \
     add-apt-repository ppa:yandex-load/main && \
@@ -23,6 +25,8 @@ RUN apt-get update && \
         build-essential \
         libxml2-dev \
         libxslt1-dev \
+        libffi-dev \
+        libssl-dev \
         python-dev \
         zlib1g-dev && \
     apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
